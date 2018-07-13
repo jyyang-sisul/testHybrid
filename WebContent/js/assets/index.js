@@ -663,15 +663,6 @@
 		SyntaxHighlighter.defaults['toolbar'] = false;
 		SyntaxHighlighter.defaults['auto-links'] = false;
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	});
 
 	$( document ).on( "pagecreate", function( e ) {
