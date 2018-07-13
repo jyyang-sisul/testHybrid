@@ -662,6 +662,16 @@
 		//$( this ).find( "[data-demo-html], [data-demo-js], [data-demo-css], [data-demo-php]" ).viewSourceCode();
 		SyntaxHighlighter.defaults['toolbar'] = false;
 		SyntaxHighlighter.defaults['auto-links'] = false;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	});
 
 	$( document ).on( "pagecreate", function( e ) {

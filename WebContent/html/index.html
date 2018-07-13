@@ -16,25 +16,12 @@
 		<link rel="stylesheet" href="../css/assets/index.css" />   
 	</head>
 
-
-
 <div data-role="page"  class="jqm-demos">
-	<div data-role="header" class="jqm-header">
-		<h2><a href="./" title="서울시설공단 홈"><img src="http://www.sisul.or.kr/open_content/images/logo.gif" alt="서울시설공단 홈"></a></h2>
-		<p><span class="jqm-version"></span> 장애인콜택시운영처</p>
-        <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-        <a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
-    </div><!-- /header -->
-    
-	<div role="main" class="ui-content jqm-content">
-	
-	
+	<div data-role="header" class="jqm-header"></div><!-- /header -->
+    <div role="main" class="ui-content jqm-content">
 		<h1>Table Reflow: Stripes and strokes</h1>
-
         <h3>Top Movies</h3>
-
 		<div data-demo-html="true" data-demo-css="true">
-
             <table data-role="table" id="movie-table-custom" data-mode="reflow" class="movie-list ui-responsive">
               <thead>
                 <tr>
@@ -129,67 +116,20 @@
                 </tr>
               </tbody>
             </table>
-
 		</div><!-- /data-demo -->	
-	
 	</div><!-- /content -->
 	
 	<div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
-	
-		<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
-			<li data-filtertext="demos homepage" data-icon="home"><a href=".././">Home</a></li>
-			<li data-filtertext="운전원"><a href="../intro/" data-ajax="false">운전원</a></li>
-			<li data-filtertext="상담원"><a href="../button-markup/" data-ajax="false">상담원</a></li>
-			<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
-				<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
-					<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
-					    업무<span class="ui-collapsible-heading-status">업무</span>
-					</a>
-				</h3>
-				<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
-					<ul>
-						<li data-filtertext="운영팀"><a href="../checkboxradio-checkbox/" data-ajax="false">운영팀</a></li>
-						<li data-filtertext="관리팀"><a href="../checkboxradio-radio/" data-ajax="false">관리팀</a></li>
-					</ul>
-				</div>
-			</li>
-			<li data-filtertext="통계"><a href="../button/" data-ajax="false">통계</a></li>
-			<li data-filtertext="관리"><a href="../button/" data-ajax="false">관리자</a></li>
-		</ul>	
 	</div><!-- /panel -->
 	
 	
 	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-		<p>version 2018.07.12</p>
-		<p>Copyright 2018 YJY</p>
-     
-    <div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a">
-		<div class="jqm-search">
-			<ul class="jqm-list" data-filter-placeholder="Search demos..." data-filter-reveal="true">		<!-- data-filter-reveal="false" default 표시 -->
-				<li data-filtertext="demos homepage" data-icon="home"><a href=".././">Home</a></li>
-				<li data-filtertext="운전원"><a href="../intro/" data-ajax="false">운전원</a></li>
-				<li data-filtertext="상담원"><a href="../button-markup/" data-ajax="false">상담원</a></li>
-				<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
-					<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
-						<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
-						    업무<span class="ui-collapsible-heading-status">업무</span>
-						</a>
-					</h3>
-					<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
-						<ul>
-							<li data-filtertext="운영팀"><a href="../checkboxradio-checkbox/" data-ajax="false">운영팀</a></li>
-							<li data-filtertext="관리팀"><a href="../checkboxradio-radio/" data-ajax="false">관리팀</a></li>
-						</ul>
-					</div>
-				</li>
-				<li data-filtertext="통계"><a href="../button/" data-ajax="false">통계</a></li>
-				<li data-filtertext="관리"><a href="../button/" data-ajax="false">관리자</a></li>
-			</ul>
-		</div>
-	</div><!-- /panel -->
+	</div>	<!-- end div -->
 	
+	<div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a"> 
+	</div>
 	
-</div>	<!-- end div -->
+</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -197,7 +137,54 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="../js/assets/index.js"></script>
 	
-	
+	<script>
+
+	$(document).on("pagebeforecreate", function() {
+
+			var headerText = '<h2><a href="./" title="서울시설공단 홈"><img src="http://www.sisul.or.kr/open_content/images/logo.gif" alt="서울시설공단 홈"></a></h2>'
+				headerText +='<p><span class="jqm-version"></span> 장애인콜택시운영처</p>'
+				headerText +='<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>'
+				headerText +='<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>' 
+			    $('.jqm-header').html(headerText);
+			
+			var footerText = '';
+			    footerText +='<p>version 2018.07.12</p>                                                                                                                      ';
+			    footerText +='<p>Copyright 2018 YJY</p>                                                                                                                      ';
+			    $('.jqm-footer').html(footerText);
+			
+			
+			var nvaiMenuPannel ='<ul class="jqm-list ui-alt-icon ui-nodisc-icon">                                                                                 ';
+			   nvaiMenuPannel +='	<li data-filtertext="demos homepage" data-icon="home"><a href=".././">Home</a></li>                                           ';
+			   nvaiMenuPannel +='	<li data-filtertext="운전원"><a href="../intro/" data-ajax="false">운전원</a></li>                                            ';
+			   nvaiMenuPannel +='	<li data-filtertext="상담원"><a href="../button-markup/" data-ajax="false">상담원</a></li>                                    ';
+			   nvaiMenuPannel +='	<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"                   ';
+			   nvaiMenuPannel +='		data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">    ';
+			   nvaiMenuPannel +='		<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">                                                      ';
+			   nvaiMenuPannel +='			<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">            ';
+			   nvaiMenuPannel +='			    업무<span class="ui-collapsible-heading-status">업무</span>                                                       ';
+			   nvaiMenuPannel +='			</a>                                                                                                                  ';
+			   nvaiMenuPannel +='		</h3>                                                                                                                     ';
+			   nvaiMenuPannel +='		<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">                  ';
+			   nvaiMenuPannel +='			<ul>                                                                                                                  ';
+			   nvaiMenuPannel +='				<li data-filtertext="운영팀"><a href="../checkboxradio-checkbox/" data-ajax="false">운영팀</a></li>               ';
+			   nvaiMenuPannel +='				<li data-filtertext="관리팀"><a href="../checkboxradio-radio/" data-ajax="false">관리팀</a></li>                  ';
+			   nvaiMenuPannel +='			</ul>                                                                                                                 ';
+			   nvaiMenuPannel +='		</div>                                                                                                                    ';
+			   nvaiMenuPannel +='	</li>                                                                                                                         ';
+			   nvaiMenuPannel +='	<li data-filtertext="통계"><a href="../button/" data-ajax="false">통계</a></li>                                               ';
+			   nvaiMenuPannel +='	<li data-filtertext="관리"><a href="../button/" data-ajax="false">관리자</a></li>                                             ';
+			   nvaiMenuPannel +='</ul>	                                                                                                                          ';
+			
+			   $('.jqm-navmenu-panel').html(nvaiMenuPannel);
+
+			var jqmSearchPanelText  ='';
+	      		jqmSearchPanelText +='	<div class="jqm-search">                                                                                                                    ';
+	      		jqmSearchPanelText +=nvaiMenuPannel; 
+	    		jqmSearchPanelText +='	</div>                                                                                                                                      ';
+	    		jqmSearchPanelText +='</div><!-- /panel --> ' 		  
+	    	$('.jqm-search-panel').html(jqmSearchPanelText);
+		});
+	</script>
   </body>
 </html>
 
