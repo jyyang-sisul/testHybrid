@@ -226,9 +226,9 @@ EEEEE
 			   nvaiMenuPannel +='	<li data-filtertext="관리"><a href="../button/" data-ajax="false">관리자</a></li>                                             ';
 			   nvaiMenuPannel +='</ul>	                                                                                                                          ';
 			 
-		        $( nextId + '.jqm-navmenu-panel').html(nvaiMenuPannel);
+		 $( nextId + '.jqm-navmenu-panel').html(nvaiMenuPannel);
  			   
-			var jqmSearchPanelText  ='';
+				var jqmSearchPanelText  ='';
 	      		jqmSearchPanelText +='	<div class="jqm-search">                                                                                                                   ';
 	      		jqmSearchPanelText +='<ul class="jqm-list ui-alt-icon ui-nodisc-icon">                                                                                 ';
 			   jqmSearchPanelText +='	<li data-filtertext="demos homepage" data-icon="home"><a href="#HOME">Home</a></li>                                           ';
@@ -254,8 +254,25 @@ EEEEE
 	    		jqmSearchPanelText +='	</div>                                                                                                                                      ';
 	    		jqmSearchPanelText +='</div><!-- /panel --> ' 		  
     		
-	    	    $( nextId + '.jqm-search-panel').html(jqmSearchPanelText);
- 		});
+	    	$( nextId + '.jqm-search-panel').html(jqmSearchPanelText);
+  
+		});
+
+/* 	$( document ).ready(function() {
+
+   
+		$( ".jqm-search-link" ).on( "click", function() {
+
+alert(1);
+			
+			var sss = "#" + $.mobile.activePage.attr("id")+ " .jqm-search-panel"
+ alert(  $.mobile.activePage.attr("id")) ;
+			$( sss ).panel( "open" );
+		});	 
+		 
+		  //alert($.mobile.activePage.attr("id"))
+	});
+ */
 	
 	</script>
   </body>
